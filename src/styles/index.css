@@ -1,0 +1,21 @@
+@import '@fontsource-variable/inter';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+html, body, #root { height: 100%; }
+body { @apply bg-bg text-fg font-sans text-[15px] leading-relaxed antialiased; margin: 0; }
+*:focus-visible { outline: 2px solid #83A9D2; outline-offset: 2px; border-radius: 4px; }
+button, select, input { font: inherit; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+
+@layer components {
+  .btn { @apply inline-flex items-center gap-2 rounded-md border border-line bg-transparent px-3 py-1.5 text-sm text-fg transition-colors duration-150 hover:bg-raised disabled:cursor-not-allowed disabled:opacity-50; }
+  .btn-primary { @apply border-accent bg-accent/20 hover:bg-accent/30; }
+  .field { @apply rounded-md border border-line bg-surface px-2.5 py-1.5 text-sm text-fg transition-colors duration-150 hover:border-fg3; }
+  .h1 { @apply text-[26px] font-semibold leading-tight; }
+  .h2 { @apply text-lg font-semibold; }
+  .label { @apply text-[13px] text-fg3; }
+  .rule { @apply border-t border-line; }
+}
