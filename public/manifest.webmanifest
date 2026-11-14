@@ -2,9 +2,9 @@
   "name": "ASTRAMED",
   "short_name": "ASTRAMED",
   "description": "Explainable health monitoring prototype for astronauts (simulated data).",
-  "start_url": "/",
+  "start_url": ".",
   "display": "standalone",
   "background_color": "#0B1115",
   "theme_color": "#0B1115",
-  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
 }
